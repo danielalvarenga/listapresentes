@@ -1,0 +1,21 @@
+<section class="mensagens">
+  <dl class="accordion" data-accordion>
+    <dd>
+      <%= link_to "Assinar este presente e deixar mensagem", "#mensagens#{@presente.id}", class: "text-center" %>
+      <div id="<%= "mensagens#{@presente.id}" %>" class="content">
+
+        <%= render 'form_mensagem' %>
+
+        <% @presente.mensagens.each do |mensagem| %>
+          <% if (mensagem.aprovada?) %>
+            <div class="panel2">
+              <span class="assinatura"><%= mensagem.remetente %>: </span>
+              <span class="texto-mensagem"><%= mensagem.texto %></span>
+              <div><%= "Em #{mensagem.created_at.strftime('%d de %B de %Y às %H:%M')}" %></div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </dd>
+  </dl>
+</section>

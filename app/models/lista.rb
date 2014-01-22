@@ -15,4 +15,6 @@
 class Lista < ActiveRecord::Base
   belongs_to :user
   has_many :presentes
+
+  validates :nome, :presenteados, :user_id, presence: true
 end

@@ -116,6 +116,10 @@ section.logo {
   font-size: 1.5em;
 }
 
+section.logo {
+  border-bottom: solid 2px #eee;
+}
+
 section.logo * {
   background: #0072C6;
   color: #fff;
@@ -187,12 +191,11 @@ section.logo * {
   margin-top: 0;
 }
 
-.resultados table {
-  width: 80%;
-  max-width: 80%;
-  margin: auto;
-  margin-bottom: 1rem;
-  border:none 5px #000000;
+.panel, table, .mensagens .accordion dd > a,
+.mensagens .accordion .panel2,
+.mensagens .accordion form,
+.mensagens .accordion .form-inputs *{
+  border:none 0px #000000;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright:5px;
   -moz-border-radius-bottomleft:5px;
@@ -207,20 +210,8 @@ section.logo * {
   border-bottom-right-radius:5px;
 }
 
-.panel, table {
-  border:none 5px #000000;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright:5px;
-  -moz-border-radius-bottomleft:5px;
-  -moz-border-radius-bottomright:5px;
-  -webkit-border-top-left-radius:5px;
-  -webkit-border-top-right-radius:5px;
-  -webkit-border-bottom-left-radius:5px;
-  -webkit-border-bottom-right-radius:5px;
-  border-top-left-radius:5px;
-  border-top-right-radius:5px;
-  border-bottom-left-radius:5px;
-  border-bottom-right-radius:5px;
+.panel i {
+  color: #0072C6;
 }
 
 .panel.lista {
@@ -228,7 +219,7 @@ section.logo * {
   color: #fff;
 }
 
-.panel.lista a{
+.panel.lista *{
   color: #fff;
 }
 
@@ -274,4 +265,47 @@ label {
 
 .comprar {
   width: 100%;
+}
+
+.mensagens .accordion .content.active {
+  background: none;
+}
+
+.mensagens .accordion dd > a {
+  color: #0072C6;
+  background: #ddd;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.mensagens .accordion .panel2 {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  background: #fff;
+}
+
+.mensagens .accordion form {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  background: #ddd;
+}
+
+.mensagens .accordion .form-inputs textarea {
+  margin-top: 0.5rem;
+}
+
+.mensagens .accordion .form-inputs textarea {
+  margin-top: 0.5rem;
+}
+
+.mensagens .accordion .form-actions {
+  margin-top: 0.5rem;
+}
+.mensagens .accordion .form-actions .button {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
 }

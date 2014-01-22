@@ -1,19 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <h1>Mensagem</h1>
 
-<p>
-  <strong>Remetente:</strong>
-  <%= @mensagem.remetente %>
-</p>
+  <div class="panel lista">
+    <h4><%= "De #{@mensagem.remetente}:" %></h4>
+    <hr/>
+    <span><%= @mensagem.texto %></span>
+    <hr/>
+    <h6><%= "Lista: #{@mensagem.presente.lista.nome} de #{@mensagem.presente.lista.presenteados}" %></h6>
+    <h6><%= "Presente: #{@mensagem.presente.nome}" %></h6>
+    <h6><%= "Em #{@mensagem.created_at.strftime('%d de %B de %Y às %H:%M')}" %></h6>
+  </div>
 
-<p>
-  <strong>Texto:</strong>
-  <%= @mensagem.texto %>
-</p>
+  <% if @mensagem.aprovada? %>
+      <td><%= link_to 'Desaprovar', mensagem_desaprovar_path(@mensagem), class: "button" %></td>
+  <% else %>
+      <td><%= link_to 'Aprovar', mensagem_aprovar_path(@mensagem), class: "button" %></td>
+  <% end %>
 
-<p>
-  <strong>Presente:</strong>
-  <%= @mensagem.presente %>
-</p>
+  <%= link_to "Voltar", mensagens_path, class: "button" %>
+</div>
 
-<%= link_to t('Edit'), edit_mensagem_path(@mensagem) %> |
-<%= link_to t('Back'), mensagens_path %>

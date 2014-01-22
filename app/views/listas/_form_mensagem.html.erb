@@ -1,0 +1,17 @@
+<%= simple_form_for :mensagem, url: mensagens_path do |f| %>
+    <%= f.error_notification %>
+    <div class="form-inputs">
+      <%= f.input :remetente,
+                  label: false,
+                  placeholder: "Seu Nome" %>
+      <%= f.input :texto, as: :text,
+                  label: false,
+                  placeholder: "Sua mensangem..." %>
+    </div>
+    <%= f.input :presente_id, as: :hidden, input_html: {value: @presente.id} %>
+    <%= f.input :aprovada, as: :hidden, input_html: {value: "0"} %>
+
+    <div class="form-actions text-right">
+      <%= f.button :submit, "Enviar", class: "button" %>
+    </div>
+<% end %>

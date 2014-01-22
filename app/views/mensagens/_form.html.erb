@@ -2,9 +2,7 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :remetente %>
-    <%= f.input :texto %>
-    <%= f.association :presente %>
+    <%= f.input :aprovada, label: "Aprovar mensagem e exibir na lista", as: :boolean, input_html: {value: "0"} %>
   </div>
 
   <div class="form-actions">

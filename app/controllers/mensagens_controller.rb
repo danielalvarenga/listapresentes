@@ -1,5 +1,6 @@
 class MensagensController < ApplicationController
   before_action :set_mensagem, only: [:show, :edit, :update, :destroy]
+  before_filter  :authenticate_user!, except: [:create]
 
   # GET /mensagens
   # GET /mensagens.json
@@ -28,7 +29,7 @@ class MensagensController < ApplicationController
 
     respond_to do |format|
       if @mensagem.save
-        format.html { redirect_to @mensagem, notice: 'Mensagem was successfully created.' }
+        format.html { redirect_to @mensagem.presente.lista, notice: 'Mensagem Adicionada. Após aprovação do proprietário da lista será exibida.' }
         format.json { render action: 'show', status: :created, location: @mensagem }
       else
         format.html { render action: 'new' }
@@ -58,6 +59,34 @@ class MensagensController < ApplicationController
     respond_to do |format|
       format.html { redirect_to mensagens_url }
       format.json { head :no_content }
+    end
+  end
+
+  def aprovar
+    @mensagem = Mensagem.find(params[:mensagem_id])
+
+    respond_to do |format|
+      if @mensagem.update(aprovada: true)
+        format.html { redirect_to mensagens_url, notice: 'Mensagem aprovada.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @mensagem.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def desaprovar
+    @mensagem = Mensagem.find(params[:mensagem_id])
+
+    respond_to do |format|
+      if @mensagem.update(aprovada: false)
+        format.html { redirect_to mensagens_url, notice: 'Mensagem aprovada.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @mensagem.errors, status: :unprocessable_entity }
+      end
     end
   end
 

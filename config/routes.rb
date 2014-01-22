@@ -1,6 +1,10 @@
 Listapresentes::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  resources :mensagens
+
+  resources :mensagens do
+    get 'aprovar'
+    get 'desaprovar'
+  end
 
   resources :presentes
 

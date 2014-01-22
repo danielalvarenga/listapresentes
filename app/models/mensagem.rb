@@ -13,4 +13,16 @@
 
 class Mensagem < ActiveRecord::Base
   belongs_to :presente
+
+  def aprovada?
+    self.aprovada == true
+  end
+
+  def aprovar
+    self.aprovada = true
+  end
+
+  def desaprovar
+    self.aprovada = false
+  end
 end

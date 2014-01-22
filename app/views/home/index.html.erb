@@ -8,12 +8,21 @@
     </div>
   </div>
 </section>
+<!--
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel lista text-center">
+      <h4>Listas de Presentes</h4>
+    </div>
+  </div>
+</div>
+-->
 <div class="row">
     <% @listas.each do |lista| %>
-        <div class="large-6 columns">
+        <div class="large-12 columns">
           <div class="panel text-center">
-            <h3><%= link_to lista.nome, edit_lista_path(lista) %></h3>
-            <h4><%= link_to lista.presenteados, edit_lista_path(lista) %></h4>
+            <i class="fa fa-gift fa-2x left"></i>
+            <h4><%= link_to "#{lista.nome} para #{lista.presenteados}", lista_path(lista) %></h4>
           </div>
         </div>
     <% end %>

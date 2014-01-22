@@ -1,0 +1,34 @@
+<% @lista.presentes.each do |presente| %>
+    <div class="panel">
+      <div class="row">
+        <div class="large-6 columns">
+          <%= image_tag(presente.foto, width: "100%", alt: presente.nome, title: presente.nome) %>
+        </div>
+        <div class="large-6 columns">
+          <div class="row">
+            <div class="large-12 columns">
+              <h3><%= presente.nome %></h3>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="large-12 columns text-center">
+              <h4><%= number_to_currency(presente.valor) %></h4>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="large-12 columns text-center">
+              <%= link_to 'COMPRAR', presente.url, title: presente.url, class: "comprar button", target: "_blank" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <% @presente = presente %>
+          <%= render 'mensagens' %>
+        </div>
+      </div>
+    </div>
+<% end %>
