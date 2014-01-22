@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Remetente:</strong>
+  <%= @mensagem.remetente %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @mensagem.texto %>
+</p>
+
+<p>
+  <strong>Presente:</strong>
+  <%= @mensagem.presente %>
+</p>
+
+<%= link_to t('Edit'), edit_mensagem_path(@mensagem) %> |
+<%= link_to t('Back'), mensagens_path %>

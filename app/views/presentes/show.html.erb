@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @presente.nome %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= number_to_currency(@presente.valor) %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @presente.foto %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @presente.url %>
+</p>
+
+<p>
+  <strong>Lista:</strong>
+  <%= @presente.lista %>
+</p>
+
+<%= link_to t('Edit'), edit_presente_path(@presente) %> |
+<%= link_to t('Back'), presentes_path %>

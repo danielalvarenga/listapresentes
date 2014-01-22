@@ -1,0 +1,29 @@
+<div class="row">
+    <h1>Minhas listas</h1>
+
+    <%= link_to t('Nova Lista'), new_lista_path, class: "button right" %>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Presenteados</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @listas.each do |lista| %>
+          <tr>
+            <td><%= lista.nome %></td>
+            <td><%= lista.presenteados %></td>
+            <td><%= link_to "Visualizar", lista %></td>
+            <td><%= link_to t('Edit'), edit_lista_path(lista) %></td>
+            <td><%= link_to "Excluir", lista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>

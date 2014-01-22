@@ -1,0 +1,50 @@
+<%= simple_form_for(@presente) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <div class="row">
+      <%= f.input :nome,
+                  label: "Nome do Presente",
+                  placeholder: "Exemplo: Faqueiro Tramontina 24 peças",
+                  wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+    <%= f.input :valor,
+                as: :decimal,
+                label: "Valor",
+                hint: "Quanto custa o produto.",
+                wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+    <%= f.input :foto,
+                as: :url,
+                label: "Imagem do Presente",
+                hint: "URL da imagem do produto (no site onde você escolheu o produto clique com botão direito encima da imagem e seleciona 'Copiar URL'.",
+                wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+    <%= f.input :url,
+                as: :url,
+                label: "URL do Presente",
+                hint: "Endereço do produto escolhido no site.",
+                wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+      <%= f.association :lista,
+                        label_method: :nome,
+                        value_method: :id,
+                        wrapper_html: {class: "large-6 columns"} %>
+    </div>
+  </div>
+
+    <div class="form-actions">
+      <div class="row">
+        <div class="large-2 columns">
+          <%= f.button :submit, "Salvar", class: "button" %>
+        </div>
+        <div class="large-2 columns left">
+          <%= link_to 'Cancelar', presentes_path, class: "button" %>
+        </div>
+      </div>
+    </div>
+<% end %>

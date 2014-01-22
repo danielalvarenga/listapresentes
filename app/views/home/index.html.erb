@@ -1,0 +1,20 @@
+<section class="logo">
+  <div class="row">
+    <div class="small-12 large-12 columns text-center">
+      <%= link_to(root_path) do %>
+          <i class="fa fa-gift fa-5x"></i><h1>Lista Presentes</h1>
+      <% end %>
+      <h2>Simples e Fácil</h2>
+    </div>
+  </div>
+</section>
+<div class="row">
+    <% @listas.each do |lista| %>
+        <div class="large-6 columns">
+          <div class="panel text-center">
+            <h3><%= link_to lista.nome, edit_lista_path(lista) %></h3>
+            <h4><%= link_to lista.presenteados, edit_lista_path(lista) %></h4>
+          </div>
+        </div>
+    <% end %>
+</div>

@@ -1,0 +1,36 @@
+<%= simple_form_for(@lista) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <div class="row">
+      <%= f.input :nome,
+                  label: "Nome da Lista",
+                  placeholder: "Exemplo: Chá de Casa Nova",
+                  wrapper_html: {class: "large-6 columns"} %>
+      <%= f.input :presenteados,
+                  label: "Presenteados",
+                  hint: "Uma ou mais pessoas que receberão os presentes",
+                  placeholder: "Exemplo: Daniel ou Daniel e Lívia",
+                  wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+      <%= f.input :descricao,
+                  as: :ckeditor,
+                  input_html: { ckeditor: {toolbar: 'Full'} },
+                  label: "Descrição",
+                  wrapper_html: {class: "large-12 columns"} %>
+    </div>
+    <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
+  </div>
+
+  <div class="form-actions">
+    <div class="row">
+      <div class="large-2 columns">
+        <%= f.button :submit, "Salvar", class: "button" %>
+      </div>
+      <div class="large-2 columns left">
+        <%= link_to 'Cancelar', listas_path, class: "button" %>
+      </div>
+    </div>
+  </div>
+<% end %>

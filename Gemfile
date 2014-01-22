@@ -1,0 +1,85 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.2'
+
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.1.2'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]
+
+# Traduções Rails
+gem 'rails-i18n', '~> 4.0.0'
+# Autenticação de Usuário
+gem 'devise'
+# Estrutura de configuração
+gem 'figaro'
+# Criar formulários mais fácil
+gem 'simple_form'
+# Framework front-end ZURB Foundation 5
+gem 'foundation-rails'
+# Utilizar http://fontawesome.io/
+gem 'font-awesome-rails'
+# Caixa de formatação WYSIWYG
+gem 'ckeditor'
+# Biblioteca para anexar arquivos
+gem 'paperclip'
+
+group :development do
+  # Exibe os atributos no model (como comentário)
+  gem 'annotate'
+  # ajuda quando as coisas dão errado
+  gem 'better_errors'
+  # suprime as mensagens de distração no log
+  gem 'quiet_assets'
+  # gera arquivos para um layout de aplicação
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  # instancia objetos para serem utilizados nos testes
+  gem "factory_girl_rails", "~> 4.3.0"
+  # gem de testes
+  gem 'rspec-rails', '~> 2.14.0'
+end
+
+group :test do
+  # limpa a base de dados de teste após execultar os testes
+  gem 'database_cleaner'
+end

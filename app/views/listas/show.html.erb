@@ -1,0 +1,50 @@
+<section class="logo">
+  <div class="row">
+    <div class="small-12 large-12 columns text-center">
+      <%= link_to(root_path) do %>
+          <h1><%= @lista.nome %></h1>
+      <% end %>
+      <h2><%= @lista.presenteados %></h2>
+    </div>
+  </div>
+</section>
+<% if(current_user.id == @lista.user_id) %>
+    <%= link_to edit_lista_path(@lista), class: "button right", title: "Editar Lista" do %><i class="fa fa-edit fa-2x"></i><% end %>
+<% end %>
+<div class="row">
+  <div class="large-4 columns">
+    <div class="panel">
+        <%= @lista.descricao.html_safe %>
+    </div>
+  </div>
+  <div class="large-8 columns">
+      <% @lista.presentes.each do |p| %>
+        <div class="panel">
+          <div class="row">
+            <div class="large-6 columns">
+              <%= image_tag(p.foto, width: "100%", alt: p.nome, title: p.nome) %>
+            </div>
+            <div class="large-6 columns">
+              <div class="row">
+                <div class="large-12 columns">
+                    <h3><%= p.nome %></h3>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="large-12 columns text-center">
+                    <h4><%= number_to_currency(p.valor) %></h4>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="large-12 columns text-center">
+                  <%= link_to 'COMPRAR', p.url, title: p.url, class: "comprar button", target: "_blank" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
