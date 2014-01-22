@@ -20,10 +20,10 @@ test:
 
 production:
   adapter: postgresql
-    encoding: unicode
-    database: d3823j27nbdd3i
-    pool: 5432
-    username: zmlqfikfpwpmeh
-    password: _IRsWkoOwLiJHWED5oQW-F85th
-    host: ec2-107-20-245-187.compute-1.amazonaws.com
-    #timeout: 5000
+  encoding: unicode
+  database: d3823j27nbdd3i
+  pool: 5432
+  username: zmlqfikfpwpmeh
+  password: _IRsWkoOwLiJHWED5oQW-F85th
+  host: ec2-107-20-245-187.compute-1.amazonaws.com
+  #timeout: 5000

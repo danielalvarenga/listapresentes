@@ -29,7 +29,7 @@ class PresentesController < ApplicationController
 
     respond_to do |format|
       if @presente.save
-        format.html { redirect_to @presente, notice: 'Presente was successfully created.' }
+        format.html { redirect_to presentes_url, notice: 'Presente was successfully created.' }
         format.json { render action: 'show', status: :created, location: @presente }
       else
         format.html { render action: 'new' }
