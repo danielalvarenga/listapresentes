@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -62,6 +59,8 @@ gem 'ckeditor'
 gem 'paperclip'
 
 group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   # Exibe os atributos no model (como comentário)
   gem 'annotate'
   # ajuda quando as coisas dão errado
@@ -82,4 +81,10 @@ end
 group :test do
   # limpa a base de dados de teste após execultar os testes
   gem 'database_cleaner'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'thin'
 end
