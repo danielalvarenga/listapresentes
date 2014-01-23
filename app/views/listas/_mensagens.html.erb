@@ -1,7 +1,9 @@
 <section class="mensagens">
   <dl class="accordion" data-accordion>
     <dd>
-      <%= link_to "Assinar este presente e deixar mensagem", "#mensagens#{@presente.id}", class: "text-center" %>
+      <%= link_to "#mensagens#{@presente.id}", class: "text-center" do %>
+          <i class="fa fa-comment"></i> Assinar este presente e deixar mensagem
+      <% end %>
       <div id="<%= "mensagens#{@presente.id}" %>" class="content">
 
         <%= render 'form_mensagem' %>

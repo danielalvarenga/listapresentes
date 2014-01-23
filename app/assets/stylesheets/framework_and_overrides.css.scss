@@ -194,7 +194,8 @@ section.logo * {
 .panel, table, .mensagens .accordion dd > a,
 .mensagens .accordion .panel2,
 .mensagens .accordion form,
-.mensagens .accordion .form-inputs *{
+.mensagens .accordion .form-inputs *,
+.input.boolean{
   border:none 0px #000000;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright:5px;
@@ -308,4 +309,22 @@ label {
   margin: 0;
   padding: 0.5rem;
   font-size: 0.8rem;
+}
+
+.datetime {
+  width: auto;
+  color: #fff;
+}
+
+.datetime select {
+  color: #000;
+}
+
+.input.boolean {
+  padding: 2px 10px 2px 10px;
+  background: #0072C6;
+}
+
+.button i {
+  color: #fff;
 }

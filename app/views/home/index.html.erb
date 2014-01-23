@@ -19,11 +19,16 @@
 -->
 <div class="row">
     <% @listas.each do |lista| %>
+      <% if(lista.publica?) %>
         <div class="large-12 columns">
-          <div class="panel text-center">
+          <div class="panel <%= lista.fechada? ? "lista" : "" %> text-center">
             <i class="fa fa-gift fa-2x left"></i>
+            <% if (lista.fechada?) %>
+                <i class="fa fa-lock"></i> Fechada
+            <% end %>
             <h4><%= link_to "#{lista.nome} para #{lista.presenteados}", lista_path(lista) %></h4>
           </div>
         </div>
+      <% end %>
     <% end %>
 </div>

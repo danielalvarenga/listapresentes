@@ -7,11 +7,28 @@
                   label: "Nome da Lista",
                   placeholder: "Exemplo: Chá de Casa Nova",
                   wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
       <%= f.input :presenteados,
                   label: "Presenteados",
                   hint: "Uma ou mais pessoas que receberão os presentes",
                   placeholder: "Exemplo: Daniel ou Daniel e Lívia",
                   wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+      <%= f.input :dt_fechamento,
+                  as: :datetime,
+                  label: "Data de Fechamento da Lista",
+                  hint: "Não poderão mais haver compras após esta data",
+                  wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="row">
+      <div class="large-2 columns">
+        <%= f.input :publicada,
+                  as: :boolean,
+                  label: "Publicar Lista",
+                  default: "0" %>
+      </div>
     </div>
     <div class="row">
       <%= f.input :descricao,
@@ -34,3 +51,10 @@
     </div>
   </div>
 <% end %>
+
+
+<script type="text/javascript" charset="utf-8">
+    $('.datepicker').fdatepicker({
+        format: "dd/mm/yy"
+    });
+</script>

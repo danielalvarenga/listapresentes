@@ -19,7 +19,11 @@
           <hr/>
           <div class="row">
             <div class="large-12 columns text-center">
-              <%= link_to 'COMPRAR', presente.url, title: presente.url, class: "comprar button", target: "_blank" %>
+              <% if (@lista.fechada?) %>
+                  <div class="button"><i class="fa fa-lock"></i> Fechado</div>
+              <% else %>
+                <%= link_to 'COMPRAR', presente.url, title: presente.url, class: "comprar button", target: "_blank" %>
+              <% end %>
             </div>
           </div>
         </div>

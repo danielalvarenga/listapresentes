@@ -8,6 +8,7 @@
         <tr>
           <th>Nome</th>
           <th>Presenteados</th>
+          <th>Status</th>
           <th></th>
           <th></th>
           <th></th>
@@ -19,8 +20,9 @@
           <tr>
             <td><%= lista.nome %></td>
             <td><%= lista.presenteados %></td>
+            <td><%= lista.status %></td>
             <td><%= link_to "Visualizar", lista %></td>
-            <td><%= link_to t('Edit'), edit_lista_path(lista) %></td>
+            <td><%= link_to "Editar", edit_lista_path(lista) %></td>
             <td><%= link_to "Excluir", lista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
