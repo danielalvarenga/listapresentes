@@ -82,9 +82,9 @@ group :test do
   # limpa a base de dados de teste após execultar os testes
   gem 'database_cleaner'
 end
-gem 'pg'
-group :production do
 
+group :production do
+  gem 'pg'
   gem 'rails_12factor'
   gem 'thin'
 end

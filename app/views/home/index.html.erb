@@ -1,34 +1,34 @@
-<section class="logo">
-  <div class="row">
-    <div class="small-12 large-12 columns text-center">
-      <%= link_to(root_path) do %>
-          <i class="fa fa-gift fa-5x"></i><h1>Lista Presentes</h1>
-      <% end %>
-      <h2>Simples e Fácil</h2>
-    </div>
-  </div>
-</section>
-<!--
-<div class="row">
-  <div class="large-12 columns">
-    <div class="panel lista text-center">
-      <h4>Listas de Presentes</h4>
-    </div>
-  </div>
-</div>
--->
-<div class="row">
-    <% @listas.each do |lista| %>
-      <% if(lista.publica?) %>
-        <div class="large-12 columns">
-          <div class="panel <%= lista.fechada? ? "lista" : "" %> text-center">
-            <i class="fa fa-gift fa-2x left"></i>
-            <% if (lista.fechada?) %>
-                <i class="fa fa-lock"></i> Fechada
-            <% end %>
-            <h4><%= link_to "#{lista.nome} para #{lista.presenteados}", lista_path(lista) %></h4>
+<section class="busca">
+     <div class="row">
+      <div class="large-12 columns">
+        <div class="panel lista text-center">
+          <div class="logo">
+            <div class="row">
+              <div class="small-12 large-12 columns text-center">
+                <%= link_to(root_path) do %>
+                    <i class="fa fa-gift fa-5x"></i><h1>Lista Presentes</h1>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="busca">
+                <%= simple_form_for :pesquisar, url: busca_listas_path do |f|%>
+                    <%= f.error_notification %>
+                    <div class="row">
+                      <%= f.input :palavras_texto,
+                                  label: false,
+                                  placeholder: "Nome da lista ou das pessoas presenteadas",
+                                  wrapper_html: {class: "large-12 columns text-center"} %>
+                    </div>
+                    <div class="row">
+                      <%= f.button :submit, "Buscar Lista", class: "button submit" %>
+                    </div>
+                <% end %>
+            </div>
           </div>
         </div>
-      <% end %>
-    <% end %>
-</div>
+      </div>
+    </div>
+</section>
+

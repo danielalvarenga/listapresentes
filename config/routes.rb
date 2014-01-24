@@ -8,7 +8,11 @@ Listapresentes::Application.routes.draw do
 
   resources :presentes
 
-  resources :listas
+  resources :listas do
+    collection do
+      post 'busca'
+    end
+  end
 
   get "home/index"
   devise_for :users

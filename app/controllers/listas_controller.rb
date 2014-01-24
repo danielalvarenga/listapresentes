@@ -1,6 +1,6 @@
 class ListasController < ApplicationController
   before_action :set_lista, only: [:show, :edit, :update, :destroy]
-  before_filter  :authenticate_user!, except: [:show]
+  before_filter  :authenticate_user!, except: [:show, :busca]
 
   # GET /listas
   # GET /listas.json
@@ -59,6 +59,28 @@ class ListasController < ApplicationController
     respond_to do |format|
       format.html { redirect_to listas_url }
       format.json { head :no_content }
+    end
+  end
+
+  # POST /listas
+  # POST /listas.json
+  def busca
+    palavras = params[:pesquisar][:palavras_texto].split
+    sql = ""
+    palavras.each do |p|
+      if (p.size > 2 && !%w(para com um uma por pela pelo for).include?(p))
+        sql = sql + "nome LIKE '%#{p}%' OR presenteados LIKE '%#{p}%' OR "
+      end
+    end
+    @listas = Lista.where(sql[0..-5]).order("dt_fechamento DESC", "created_at DESC")
+
+    respond_to do |format|
+      if (!@listas.empty?)
+        format.html { render "busca" }
+        format.json { render json: @listas }
+      else
+        format.html { redirect_to home_index_path, notice: "Nenhuma lista encontrada" }
+      end
     end
   end
 

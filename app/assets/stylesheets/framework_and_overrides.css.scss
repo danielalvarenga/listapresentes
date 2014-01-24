@@ -127,14 +127,14 @@ section.logo * {
 
 .logo i {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   display: inline;
   margin-left: 1rem;
 }
 
 .logo h1 {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   display: inline;
   margin-left: 1rem;
 }
@@ -222,6 +222,10 @@ section.logo * {
 
 .panel.lista *{
   color: #fff;
+}
+
+.panel.lista input{
+  color: #000;
 }
 
 .control-label, h1, p {
@@ -328,3 +332,24 @@ label {
 .button i {
   color: #fff;
 }
+
+section.busca .panel {
+  margin-top: 2rem;
+}
+
+.busca input.string {
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.busca input.submit {
+  background: #eee;
+  color: #0072C6;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
