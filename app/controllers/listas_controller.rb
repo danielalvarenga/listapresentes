@@ -69,7 +69,7 @@ class ListasController < ApplicationController
     sql = ""
     palavras.each do |p|
       if (p.size > 2 && !%w(para com um uma por pela pelo for).include?(p))
-        sql = sql + "nome LIKE '%#{p}%' OR presenteados LIKE '%#{p}%' OR "
+        sql = sql + "upper(nome) LIKE '%#{p.upcase}%' OR upper(presenteados) LIKE '%#{p.upcase}%' OR "
       end
     end
     @listas = Lista.where(sql[0..-5]).order("dt_fechamento DESC", "created_at DESC")
