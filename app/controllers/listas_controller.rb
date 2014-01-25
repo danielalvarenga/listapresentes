@@ -11,6 +11,19 @@ class ListasController < ApplicationController
   # GET /listas/1
   # GET /listas/1.json
   def show
+    @lista = Lista.find(params[:id])
+
+    respond_to do |format|
+      if @lista.publica?
+        format.html { render 'show' }
+      else
+        if (user_signed_in? && current_user.id == @lista.user_id)
+          format.html { render 'show' }
+        else
+          format.html { render home_index_path, notice: "Lista não encontrada." }
+        end
+      end
+    end
   end
 
   # GET /listas/new

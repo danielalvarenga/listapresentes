@@ -14,6 +14,12 @@ Listapresentes::Application.routes.draw do
     end
   end
 
+  resources :nokogiri do
+    collection do
+      post 'extrair_imagens'
+    end
+  end
+
   get "home/index"
   devise_for :users
 

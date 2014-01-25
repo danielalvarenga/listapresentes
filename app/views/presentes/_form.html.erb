@@ -1,4 +1,4 @@
-<%= simple_form_for(@presente) do |f| %>
+<%= simple_form_for @presente, html: {id: "cadastro-presente"} do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -16,18 +16,30 @@
                 wrapper_html: {class: "large-6 columns"} %>
     </div>
     <div class="row">
-    <%= f.input :foto,
-                as: :url,
-                label: "Imagem do Presente",
-                hint: "URL da imagem do produto (no site onde você escolheu o produto clique com botão direito encima da imagem e seleciona 'Copiar URL'.",
-                wrapper_html: {class: "large-6 columns"} %>
-    </div>
-    <div class="row">
     <%= f.input :url,
                 as: :url,
                 label: "URL do Presente",
                 hint: "Endereço do produto escolhido no site.",
                 wrapper_html: {class: "large-6 columns"} %>
+    </div>
+    <div class="escolher-fotos">
+      <div class="row">
+        <div class="large-6 column">
+          <div class="panel left">
+            <h5>Carregar Imagens do Site</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <%= f.input :foto,
+                    as: :url,
+                    label: "URL da imagem (Selecione uma imagem no quadro acima ou cole aqui)",
+                    hint: "No site onde você escolheu o produto clique com o botão direito do mouse encima da imagem e selecione 'Copiar URL' ou 'abrir em nova aba' para copiar o endereço (URL).",
+                    wrapper_html: {class: "large-6 columns"} %>
+      </div>
+    </div>
+    <div class="row">
+
     </div>
     <div class="row">
       <%= f.association :lista,
@@ -48,3 +60,14 @@
       </div>
     </div>
 <% end %>
+
+<div class="large-3 columns">
+  <%= simple_form_for :dados_presente,
+                      url: extrair_imagens_nokogiri_index_path,
+                      html: {id: "fotos-produto"},
+                      remote: true do |f| %>
+
+      <%= f.input :url_produto, as: :hidden, input_html: {value: "0"} %>
+      <%= f.button :submit, "Carregar Foto", class: "hide"  %>
+  <% end %>
+</div>

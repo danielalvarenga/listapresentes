@@ -57,6 +57,10 @@ gem 'font-awesome-rails'
 gem 'ckeditor'
 # Biblioteca para anexar arquivos
 gem 'paperclip'
+# screen-scraping
+gem 'nokogiri'
+# edit images
+gem 'fastimage'
 
 group :development do
   # Use sqlite3 as the database for Active Record

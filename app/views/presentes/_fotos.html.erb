@@ -1,0 +1,17 @@
+
+<h4>Escolha a imagem do produto:</h4>
+<div class="row">
+  <% @urls_img.each do |img| %>
+      <div class="large-3 columns end">
+        <%= image_tag(img, size: "100", class: "escolher") %>
+      </div>
+  <% end %>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    $('img.escolher').click(function(){
+        $('#presente_foto').attr('value', $(this).attr('src'));
+    })
+</script>
+
+
