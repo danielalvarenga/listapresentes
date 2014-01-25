@@ -3,10 +3,10 @@
     <div class="form-inputs">
       <%= f.input :remetente,
                   label: false,
-                  placeholder: "Seu Nome" %>
+                  placeholder: "Seu Nome " %>
       <%= f.input :texto, as: :text,
                   label: false,
-                  placeholder: "Sua mensangem..." %>
+                  placeholder: "Deixe uma mensagem..." %>
     </div>
     <%= f.input :presente_id, as: :hidden, input_html: {value: @presente.id} %>
     <%= f.input :aprovada, as: :hidden, input_html: {value: "0"} %>
