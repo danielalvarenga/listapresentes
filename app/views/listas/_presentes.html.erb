@@ -1,4 +1,4 @@
-<% @lista.presentes.each do |presente| %>
+<% @lista.presentes.order('valor ASC').each do |presente| %>
     <div class="panel">
       <div class="row">
         <div class="large-6 columns">
