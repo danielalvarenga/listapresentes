@@ -55,9 +55,10 @@ class MensagensController < ApplicationController
   # DELETE /mensagens/1
   # DELETE /mensagens/1.json
   def destroy
+    @lista = @mensagem.presente.lista
     @mensagem.destroy
     respond_to do |format|
-      format.html { redirect_to mensagens_url }
+      format.html { redirect_to @lista }
       format.json { head :no_content }
     end
   end
@@ -67,7 +68,7 @@ class MensagensController < ApplicationController
 
     respond_to do |format|
       if @mensagem.update(aprovada: true)
-        format.html { redirect_to mensagens_url, notice: 'Mensagem aprovada.' }
+        format.html { redirect_to @mensagem.presente.lista, notice: 'A mensagem agora está visível.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -81,7 +82,7 @@ class MensagensController < ApplicationController
 
     respond_to do |format|
       if @mensagem.update(aprovada: false)
-        format.html { redirect_to mensagens_url, notice: 'Mensagem aprovada.' }
+        format.html { redirect_to @mensagem.presente.lista, notice: 'A mensagem agora está oculta.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

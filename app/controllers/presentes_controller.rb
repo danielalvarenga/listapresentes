@@ -29,7 +29,7 @@ class PresentesController < ApplicationController
 
     respond_to do |format|
       if @presente.save
-        format.html { redirect_to presentes_url, notice: 'Presente was successfully created.' }
+        format.html { redirect_to @presente.lista, notice: 'Presente was successfully created.' }
         format.json { render action: 'show', status: :created, location: @presente }
       else
         format.html { render action: 'new' }
@@ -43,7 +43,7 @@ class PresentesController < ApplicationController
   def update
     respond_to do |format|
       if @presente.update(presente_params)
-        format.html { redirect_to @presente, notice: 'Presente was successfully updated.' }
+        format.html { redirect_to @presente.lista, notice: 'Presente was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

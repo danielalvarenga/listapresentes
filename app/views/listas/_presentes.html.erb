@@ -1,5 +1,8 @@
 <% @lista.presentes.order('valor ASC').each do |presente| %>
     <div class="panel">
+      <% if(user_signed_in? && current_user.id == @lista.user_id) %>
+          <%= link_to edit_presente_path(presente), class: "button right", title: "Editar Presente" do %><i class="fa fa-edit"></i><% end %>
+      <% end %>
       <div class="row">
         <div class="large-6 columns">
           <%= image_tag(presente.foto, width: "100%", alt: presente.nome, title: presente.nome) %>

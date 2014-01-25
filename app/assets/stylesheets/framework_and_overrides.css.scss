@@ -144,21 +144,29 @@ section.logo * {
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: absolute;
-  top: 25%;
+  top: 1rem;
   left: 25%;
   z-index: 10;
+  text-align: center;
+}
+
+.alert-box .close {
+  color: #fff;
+  font-weight: bold;
 }
 
 .alert-box.alert, .authform #error_explanation {
-  background-color: #ffe2dd;
-  border-color: #ff6b6b;
-  color: #ff6b6b;
+  background-color: #000;
+  border: 0;
+  color: #ffe2dd;
+  font-weight: bold;
 }
 
 .alert-box.success, .authform #error_explanation {
-  background-color: #c7ffc7;
-  border-color: #3fbb3f;
-  color: #3fbb3f;
+  background-color: #000;
+  border: 0;
+  color: #c7ffc7;
+  font-weight: bold;
 }
 
 .form-home {

@@ -8,9 +8,14 @@
     </div>
   </div>
 </section>
-<% if(user_signed_in? && current_user.id == @lista.user_id) %>
-    <%= link_to edit_lista_path(@lista), class: "button right", title: "Editar Lista" do %><i class="fa fa-edit fa-2x"></i><% end %>
-<% end %>
+<div class="row">
+  <div class="large-4 columns">
+      <% if(user_signed_in? && current_user.id == @lista.user_id) %>
+        <%= link_to new_presente_path, class: "button right", title: "Adicionar Presente" do %><i class="fa fa-gift fa-2x"></i><% end %>
+        <%= link_to edit_lista_path(@lista), class: "button right", title: "Editar Lista" do %><i class="fa fa-edit fa-2x"></i><% end %>
+      <% end %>
+  </div>
+</div>
 <div class="row">
   <div class="large-4 columns">
     <div class="panel">
