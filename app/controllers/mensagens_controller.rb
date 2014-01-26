@@ -56,10 +56,9 @@ class MensagensController < ApplicationController
   # DELETE /mensagens/1
   # DELETE /mensagens/1.json
   def destroy
-    @lista = @mensagem.presente.lista
     @mensagem.destroy
     respond_to do |format|
-      format.html { redirect_to mensagens_url }
+      format.html { redirect_to root_url }
       format.json { head :no_content }
     end
   end
