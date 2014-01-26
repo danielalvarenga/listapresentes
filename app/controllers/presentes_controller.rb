@@ -5,7 +5,7 @@ class PresentesController < ApplicationController
   # GET /presentes
   # GET /presentes.json
   def index
-    @presentes = Presente.all
+    @presentes = Presente.all.order('valor DESC')
   end
 
   # GET /presentes/1

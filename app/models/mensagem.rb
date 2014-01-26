@@ -14,7 +14,7 @@
 class Mensagem < ActiveRecord::Base
   belongs_to :presente
 
-  validates_presence_of :remetente, :texto, :aprovada
+  validates_presence_of :remetente, :texto
 
   def aprovada?
     self.aprovada == true

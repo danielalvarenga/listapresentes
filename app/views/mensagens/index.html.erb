@@ -5,9 +5,9 @@
       <thead>
         <tr>
           <th>Remetente</th>
-          <th>Mensagem</th>
           <th>Presente</th>
           <th>Lista</th>
+          <th></th>
           <th></th>
           <th></th>
         </tr>
@@ -16,9 +16,9 @@
       <tbody>
         <% @mensagens.each do |mensagem| %>
           <tr>
-            <td><%= mensagem.remetente.nil? ? "Sem nome" : mensagem.remetente %></td>
-            <td><%= mensagem.presente.nome.nil? ? "Sem nome" : mensagem.presente.nome %></td>
-            <td><%= "#{mensagem.presente.lista.nome.nil? ? "Sem nome" : mensagem.presente.lista.nome} de #{mensagem.presente.lista.presenteados}" %></td>
+            <td><%= mensagem.remetente %></td>
+            <td></td>
+            <td></td>
             <td><%= link_to 'Visualizar', mensagem %></td>
             <% if mensagem.aprovada? %>
                 <td><%= link_to 'Desaprovar', mensagem %></td>
