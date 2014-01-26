@@ -17,8 +17,8 @@
         <% @mensagens.each do |mensagem| %>
           <tr>
             <td><%= mensagem.remetente %></td>
-            <td></td>
-            <td></td>
+            <td><%= mensagem.presente.nome %></td>
+            <td><%= "#{mensagem.presente.lista.nome} de #{mensagem.presente.lista.presenteados}" %></td>
             <td><%= link_to 'Visualizar', mensagem %></td>
             <% if mensagem.aprovada? %>
                 <td><%= link_to 'Desaprovar', mensagem %></td>

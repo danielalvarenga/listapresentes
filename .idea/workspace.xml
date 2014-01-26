@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/mensagens/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="16" selection-start="409" selection-end="409" vertical-scroll-proportion="-4.0" vertical-offset="252" max-vertical-offset="756">
+            <state line="19" column="16" selection-start="387" selection-end="416" vertical-scroll-proportion="0.25" vertical-offset="252" max-vertical-offset="756">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mensagens_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mensagens_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="40" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.3255814" vertical-offset="954" max-vertical-offset="1980">
+            <state line="61" column="32" selection-start="1655" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1998">
               <folding />
             </state>
           </provider>
@@ -100,8 +100,8 @@
         <option value="$PROJECT_DIR$/app/views/listas/_form_mensagem.html.erb" />
         <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/app/views/mensagens/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/mensagens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/mensagens/index.html.erb" />
       </list>
     </option>
   </component>
@@ -756,16 +756,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mensagens/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="409" selection-end="409" vertical-scroll-proportion="-4.0" vertical-offset="252" max-vertical-offset="756">
+        <state line="61" column="32" selection-start="1655" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1998">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/mensagens/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="40" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.3255814" vertical-offset="954" max-vertical-offset="1980">
+        <state line="19" column="16" selection-start="387" selection-end="416" vertical-scroll-proportion="0.25" vertical-offset="252" max-vertical-offset="756">
           <folding />
         </state>
       </provider>
