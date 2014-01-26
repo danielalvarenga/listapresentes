@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/mensagens/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="21" selection-start="456" selection-end="456" vertical-scroll-proportion="0.54" vertical-offset="0" max-vertical-offset="400">
+            <state line="20" column="100" selection-start="612" selection-end="612" vertical-scroll-proportion="0.25" vertical-offset="270" max-vertical-offset="756">
               <folding />
             </state>
           </provider>
@@ -49,9 +49,7 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140122143235_add_aprovada_mensagens.rb" />
         <option value="$PROJECT_DIR$/app/views/mensagens/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
         <option value="$PROJECT_DIR$/app/views/mensagens/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/mensagens/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/presentes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/presente.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -93,6 +91,8 @@
         <option value="$PROJECT_DIR$/app/controllers/presentes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/listas/_presentes.html.erb" />
         <option value="$PROJECT_DIR$/config/application.yml" />
+        <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
+        <option value="$PROJECT_DIR$/app/views/mensagens/index.html.erb" />
       </list>
     </option>
   </component>
@@ -196,7 +196,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="listas" />
+              <option name="myItemId" value="mensagens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listapresentes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listapresentes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -451,11 +469,6 @@
         <state line="7" column="28" selection-start="252" selection-end="252" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="207" selection-end="217" vertical-scroll-proportion="0.39608803" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/presentes/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="24" selection-start="42" selection-end="42" vertical-scroll-proportion="0.04712042" vertical-offset="0" max-vertical-offset="382" />
@@ -636,11 +649,6 @@
         <state line="18" column="97" selection-start="897" selection-end="897" vertical-scroll-proportion="0.85" vertical-offset="18" max-vertical-offset="810" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mensagens/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="100" selection-start="841" selection-end="902" vertical-scroll-proportion="0.43431637" vertical-offset="324" max-vertical-offset="756" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/listas/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="43" selection-start="537" selection-end="560" vertical-scroll-proportion="-0.0" vertical-offset="252" max-vertical-offset="612">
@@ -705,6 +713,20 @@
     <entry file="file://$PROJECT_DIR$/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="21" selection-start="456" selection-end="456" vertical-scroll-proportion="0.54" vertical-offset="0" max-vertical-offset="400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.27" vertical-offset="108" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mensagens/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="100" selection-start="612" selection-end="612" vertical-scroll-proportion="0.25" vertical-offset="270" max-vertical-offset="756">
           <folding />
         </state>
       </provider>
