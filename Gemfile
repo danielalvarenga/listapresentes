@@ -61,6 +61,7 @@ gem 'paperclip'
 gem 'nokogiri'
 # edit images
 gem 'fastimage'
+gem "pagseguro-oficial", git: "git://github.com/pagseguro/ruby.git"
 
 group :development do
   # Use sqlite3 as the database for Active Record

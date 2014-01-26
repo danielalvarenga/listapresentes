@@ -6,7 +6,9 @@ Listapresentes::Application.routes.draw do
     get 'desaprovar'
   end
 
-  resources :presentes
+  resources :presentes do
+    get 'checkout'
+  end
 
   resources :listas do
     collection do

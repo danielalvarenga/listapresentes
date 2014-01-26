@@ -62,6 +62,30 @@ class PresentesController < ApplicationController
     end
   end
 
+  def checkout
+    @product = Presente.find(params[:presente_id])
+
+    payment = PagSeguro::PaymentRequest.new
+    #payment.abandon_url = root_url(r: "abandoned")
+    #payment.notification_url = notifications_url
+    #payment.redirect_url = lista_path(@product.lista.id)
+
+    payment.items << {
+        id: @product.id,
+        description: @product.nome,
+        amount: @product.valor,
+        weight: 5
+    }
+
+    response = payment.register
+
+    if response.errors.any?
+      raise response.errors.join("\n")
+    else
+      redirect_to response.url
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_presente

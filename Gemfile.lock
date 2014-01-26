@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/pagseguro/ruby.git
+  revision: 6631efb74fd5dc343e1a4a31d9d7e16e44b6daa2
+  specs:
+    pagseguro-oficial (2.0.2)
+      aitch
+      i18n
+      json
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,6 +36,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
+    aitch (0.2.1)
+      activesupport
+      nokogiri (>= 1.6.0)
     annotate (2.6.1)
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
@@ -205,6 +218,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   nokogiri
+  pagseguro-oficial!
   paperclip
   pg
   quiet_assets
