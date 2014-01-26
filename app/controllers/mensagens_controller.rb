@@ -59,7 +59,7 @@ class MensagensController < ApplicationController
     @lista = @mensagem.presente.lista
     @mensagem.destroy
     respond_to do |format|
-      format.html { redirect_to @lista }
+      format.html { redirect_to mensagens_url }
       format.json { head :no_content }
     end
   end
