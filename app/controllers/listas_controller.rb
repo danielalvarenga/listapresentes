@@ -1,6 +1,6 @@
 class ListasController < ApplicationController
   before_action :set_lista, only: [:show, :edit, :update, :destroy]
-  before_filter  :authenticate_user!, except: [:show, :busca]
+  before_filter  :authenticate_user!, except: [:show, :busca, :todas]
 
   # GET /listas
   # GET /listas.json
@@ -75,6 +75,15 @@ class ListasController < ApplicationController
     end
   end
 
+  def todas
+    @listas = Lista.all
+    if(user_signed_in? && current_user.id == 1)
+      render 'index'
+    else
+      render 'busca'
+    end
+  end
+
   # POST /listas
   # POST /listas.json
   def busca
@@ -85,7 +94,8 @@ class ListasController < ApplicationController
         sql = sql + "upper(nome) LIKE '%#{p.upcase}%' OR upper(presenteados) LIKE '%#{p.upcase}%' OR "
       end
     end
-    @listas = Lista.where(sql[0..-5]).order("dt_fechamento DESC", "created_at DESC")
+    sql.empty? ? sql = "" : sql = sql[0..-5] + " AND publicada = 1"
+    @listas = Lista.where(sql).order("dt_fechamento DESC", "created_at DESC")
 
     respond_to do |format|
       if (!@listas.empty?)

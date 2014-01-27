@@ -13,6 +13,7 @@ Listapresentes::Application.routes.draw do
   resources :listas do
     collection do
       post 'busca'
+      get 'todas'
     end
   end
 
