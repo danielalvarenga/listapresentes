@@ -1,10 +1,10 @@
 <section class="busca">
      <div class="row">
-      <div class="large-12 columns">
+      <div class="small-12 medium-12 large-12 columns">
         <div class="panel lista text-center">
           <div class="logo">
             <div class="row">
-              <div class="small-12 large-12 columns text-center">
+              <div class="small-12 medium-12 large-12 columns text-center">
                 <%= link_to(root_path) do %>
                     <i class="fa fa-gift fa-5x"></i><h1>Lista Presentes</h1>
                 <% end %>
@@ -18,11 +18,11 @@
                     <div class="row">
                       <%= f.input :palavras_texto,
                                   label: false,
-                                  placeholder: "Nome da lista ou das pessoas presenteadas",
+                                  placeholder: "Pesquisar pelo nome das pessoas ou da lista",
                                   wrapper_html: {class: "large-12 columns text-center"} %>
                     </div>
                     <div class="row">
-                      <%= f.button :submit, "Buscar Lista", class: "button submit" %>
+                      <%= f.button :submit, "Buscar", class: "button submit" %>
                     </div>
                 <% end %>
             </div>
@@ -31,4 +31,15 @@
       </div>
     </div>
 </section>
+
+<div class="row">
+  <div class="small-12 medium-12 large-12 columns">
+    <div class="small-6 medium-6 large-6 columns">
+      <%= link_to 'Como Funciona', page_path('como_funciona'), class: "button-large radius" %>
+    </div>
+    <div class="small-6 medium-6 large-6 columns">
+      <%= link_to 'Cadastrar-se e Criar Lista', new_user_registration_path, class: "button-large radius" %>
+    </div>
+  </div>
+</div>
 

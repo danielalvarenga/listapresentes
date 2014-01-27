@@ -10,6 +10,9 @@
 	<li><%= link_to 'Minha Conta', edit_user_registration_path %></li>
   </ul>
 <% else %>
+    <ul class="left">
+      <li><%= link_to 'Como Funciona', page_path('como_funciona') %></li>
+    </ul>
 	<ul class="right">
       <li><%= link_to 'Entrar', new_user_session_path %></li>
 	  <li><%= link_to 'Criar Lista', new_user_registration_path %></li>

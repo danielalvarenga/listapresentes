@@ -116,6 +116,10 @@ section.logo {
   font-size: 1.5em;
 }
 
+.container {
+  margin-top: 20px;
+}
+
 section.logo {
   border-bottom: solid 2px #eee;
 }
@@ -373,4 +377,41 @@ section.busca .panel {
 
 .escolher-fotos h5 {
   cursor: pointer;
+}
+
+.button-large {
+  @extend .button;
+  width: 100%;
+}
+
+.item {
+  height: 150px;
+  text-align: center;
+}
+
+.numero-item{
+  background: #0072C6;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  border:none 0px #0072C6;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-topright:50px;
+  -moz-border-radius-bottomleft:50px;
+  -moz-border-radius-bottomright:50px;
+  -webkit-border-top-left-radius:50px;
+  -webkit-border-top-right-radius:50px;
+  -webkit-border-bottom-left-radius:50px;
+  -webkit-border-bottom-right-radius:50px;
+  border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+}
+
+.texto-branco {
+  color: #fff;
 }

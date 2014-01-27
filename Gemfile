@@ -51,7 +51,7 @@ gem 'figaro'
 gem 'simple_form'
 # Framework front-end ZURB Foundation 5
 gem 'foundation-rails'
-# Utilizar http://fontawesome.io/
+# Fonte de ícones http://fontawesome.io/
 gem 'font-awesome-rails'
 # Caixa de formatação WYSIWYG
 gem 'ckeditor'
@@ -61,6 +61,9 @@ gem 'paperclip'
 gem 'nokogiri'
 # edit images
 gem 'fastimage'
+# Para páginas estáticas
+gem 'high_voltage'
+# Meio de pagamento
 gem "pagseguro-oficial", git: "git://github.com/pagseguro/ruby.git"
 
 group :development do
