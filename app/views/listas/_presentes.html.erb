@@ -28,7 +28,7 @@
                   <% if (presente.lista.id == 1) %>
                       <%= link_to 'COMPRAR', presente_checkout_path(presente.id), title: presente.url, class: "comprar button", target: "_blank" %>
                   <% else %>
-                      <%= link_to 'COMPRAR', presente_url, title: presente.url, class: "comprar button", target: "_blank" %>
+                      <%= link_to 'COMPRAR', presente.url, title: presente.url, class: "comprar button", target: "_blank" %>
                   <% end %>
               <% end %>
             </div>
