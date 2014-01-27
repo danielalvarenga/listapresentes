@@ -55,9 +55,10 @@ class PresentesController < ApplicationController
   # DELETE /presentes/1
   # DELETE /presentes/1.json
   def destroy
+    @lista = @presente.lista
     @presente.destroy
     respond_to do |format|
-      format.html { redirect_to presentes_url }
+      format.html { redirect_to @lista }
       format.json { head :no_content }
     end
   end
