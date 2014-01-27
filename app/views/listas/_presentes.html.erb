@@ -23,7 +23,7 @@
           <div class="row">
             <div class="large-12 columns text-center">
               <% if (@lista.fechada?) %>
-                  <div class="button"><i class="fa fa-lock"></i> Encerrada</div>
+                  <div class="button"><i class="fa fa-lock"></i> Compra Encerrada</div>
               <% else %>
                   <% if (presente.lista.id == 1) %>
                       <%= link_to 'COMPRAR', presente_checkout_path(presente.id), title: presente.url, class: "comprar button", target: "_blank" %>
