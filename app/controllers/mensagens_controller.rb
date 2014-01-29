@@ -99,6 +99,6 @@ class MensagensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mensagem_params
-      params.require(:mensagem).permit(:remetente, :texto, :presente_id)
+      params.require(:mensagem).permit(:remetente, :texto, :aprovada, :presente_id)
     end
 end
