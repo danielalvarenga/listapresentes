@@ -94,7 +94,7 @@ class ListasController < ApplicationController
         sql = sql + "upper(nome) LIKE '%#{p.upcase}%' OR upper(presenteados) LIKE '%#{p.upcase}%' OR "
       end
     end
-    sql.empty? ? sql = "" : sql = sql[0..-5] + " AND publicada = 1"
+    sql.empty? ? sql = "" : sql = sql[0..-5] + " AND publicada = '1'"
     @listas = Lista.where(sql).order("dt_fechamento DESC", "created_at DESC")
 
     respond_to do |format|

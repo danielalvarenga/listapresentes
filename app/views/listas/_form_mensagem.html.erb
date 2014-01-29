@@ -6,10 +6,12 @@
       <%= f.input :texto, as: :text,
                   label: false,
                   placeholder: "Deixe uma mensagem..." %>
-    </div>
-    <%= f.input :presente_id, as: :hidden, input_html: {value: @presente.id} %>
+      <%= f.input :presente_id, as: :hidden, input_html: {value: @presente.id} %>
 
-    <div class="form-actions text-right">
-      <%= f.button :submit, "Enviar", class: "button" %>
+      <div class="form-actions text-right">
+        <%= f.button :submit, "Enviar", class: "button" %>
+      </div>
     </div>
+
+
 <% end %>

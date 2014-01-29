@@ -15,16 +15,17 @@ class Mensagem < ActiveRecord::Base
   belongs_to :presente
 
   validates_presence_of :remetente, :texto
+  before_create :desaprovar
 
   def aprovada?
-    self.aprovada == true
+    self.aprovada == "1"
   end
 
   def aprovar
-    self.aprovada = true
+    self.aprovada = "1"
   end
 
   def desaprovar
-    self.aprovada = false
+    self.aprovada = "0"
   end
 end

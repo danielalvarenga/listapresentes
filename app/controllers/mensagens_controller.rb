@@ -26,7 +26,6 @@ class MensagensController < ApplicationController
   # POST /mensagens.json
   def create
     @mensagem = Mensagem.new(mensagem_params)
-    @mensagem.desaprovar
 
     respond_to do |format|
       if @mensagem.save
@@ -100,6 +99,6 @@ class MensagensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mensagem_params
-      params.require(:mensagem).permit(:remetente, :texto, :aprovada, :presente_id)
+      params.require(:mensagem).permit(:remetente, :texto, :presente_id)
     end
 end

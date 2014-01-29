@@ -293,7 +293,18 @@ label {
   background: #ddd;
   padding: 0.5rem;
   font-size: 0.8rem;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+  -moz-border-radius-bottomleft:0px;
+  -moz-border-radius-bottomright:0px;
+  -webkit-border-bottom-left-radius:0px;
+  -webkit-border-bottom-right-radius:0px;
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
+}
+
+.accordion .content {
+  display: block;
+  padding: 0;
 }
 
 .mensagens .accordion .panel2 {
@@ -305,9 +316,16 @@ label {
 
 .mensagens .accordion form {
   padding: 0.5rem;
+  padding-top: 0;
   font-size: 0.8rem;
-  margin-top: 0.5rem;
   background: #ddd;
+  /* margin-top: 0.5rem; */
+  -moz-border-radius-topleft:0px;
+  -moz-border-radius-topright:0px;
+  -webkit-border-top-left-radius:0px;
+  -webkit-border-top-right-radius:0px;
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
 }
 
 .mensagens .accordion .form-inputs textarea {
@@ -324,6 +342,8 @@ label {
 .mensagens .accordion .form-actions .button {
   margin: 0;
   padding: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   font-size: 0.8rem;
 }
 
@@ -414,4 +434,9 @@ section.busca .panel {
 
 .texto-branco {
   color: #fff;
+}
+
+.descricao-lista p{
+  margin-bottom: 0;
+  font-size: 0.8rem;
 }
