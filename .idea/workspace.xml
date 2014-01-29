@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="mensagem.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="22" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mensagens_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="69" selection-start="2931" selection-end="2931" vertical-scroll-proportion="0.59431523" vertical-offset="1588" max-vertical-offset="1980">
+            <state line="69" column="38" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.6408269" vertical-offset="994" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -197,6 +206,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mensagens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listapresentes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listapresentes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -704,14 +731,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="473" selection-end="473" vertical-scroll-proportion="0.81" vertical-offset="108" max-vertical-offset="666">
+        <state line="24" column="22" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="69" selection-start="2931" selection-end="2931" vertical-scroll-proportion="0.59431523" vertical-offset="1588" max-vertical-offset="1980">
+        <state line="69" column="38" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.6408269" vertical-offset="994" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
