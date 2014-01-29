@@ -12,9 +12,9 @@
   </div>
 
   <% if @mensagem.aprovada? %>
-      <td><%= link_to 'Desaprovar', mensagem_desaprovar_path(@mensagem), class: "button" %></td>
+      <td><%= link_to 'Desaprovar', mensagem_desaprovar_path(@mensagem.id), class: "button" %></td>
   <% else %>
-      <td><%= link_to 'Aprovar', mensagem_aprovar_path(@mensagem), class: "button" %></td>
+      <td><%= link_to 'Aprovar', mensagem_aprovar_path(@mensagem.id), class: "button" %></td>
   <% end %>
 
   <%= link_to "Voltar", mensagens_path, class: "button" %>

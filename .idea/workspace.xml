@@ -26,16 +26,34 @@
       <file leaf-file-name="mensagem.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="22" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="666">
+            <state line="20" column="21" selection-start="426" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mensagens_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mensagens_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="38" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.6408269" vertical-offset="994" max-vertical-offset="1980">
+            <state line="69" column="39" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="1048" max-vertical-offset="1980">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mensagens.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/listas/_mensagens.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.23055555" vertical-offset="475" max-vertical-offset="1062">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/mensagens/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="12" selection-start="579" selection-end="579" vertical-scroll-proportion="-8.666667" vertical-offset="36" max-vertical-offset="504">
               <folding />
             </state>
           </provider>
@@ -56,7 +74,6 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140122143235_add_aprovada_mensagens.rb" />
         <option value="$PROJECT_DIR$/app/views/mensagens/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/mensagens/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/presentes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/presente.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -98,10 +115,11 @@
         <option value="$PROJECT_DIR$/app/controllers/listas_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/listas/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/listas/_mensagens.html.erb" />
         <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
         <option value="$PROJECT_DIR$/app/views/listas/_form_mensagem.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/mensagens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/listas/_mensagens.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/mensagens/show.html.erb" />
       </list>
     </option>
   </component>
@@ -206,6 +224,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mensagens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listapresentes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listapresentes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,11 +511,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/mensagens/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="252" selection-end="252" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="306" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/presentes/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="24" selection-start="42" selection-end="42" vertical-scroll-proportion="0.04712042" vertical-offset="0" max-vertical-offset="382" />
@@ -606,11 +641,6 @@
         <state line="3" column="39" selection-start="199" selection-end="199" vertical-scroll-proportion="0.135" vertical-offset="0" max-vertical-offset="400" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mensagens/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="466" selection-end="466" vertical-scroll-proportion="0.5689655" vertical-offset="36" max-vertical-offset="504" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="2" selection-start="135" selection-end="212" vertical-scroll-proportion="0.27" vertical-offset="0" max-vertical-offset="630" />
@@ -715,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/listas/_mensagens.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="2309" selection-end="2309" vertical-scroll-proportion="1.322388" vertical-offset="313" max-vertical-offset="1062">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/listas/_form_mensagem.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="81" selection-start="407" selection-end="407" vertical-scroll-proportion="0.41379312" vertical-offset="0" max-vertical-offset="396">
@@ -731,14 +754,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="666">
+        <state line="20" column="21" selection-start="426" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="38" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.6408269" vertical-offset="994" max-vertical-offset="1980">
+        <state line="69" column="39" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="1048" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mensagens/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="252" selection-end="252" vertical-scroll-proportion="0.35" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mensagens/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="579" selection-end="579" vertical-scroll-proportion="-8.666667" vertical-offset="36" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/listas/_mensagens.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.23055555" vertical-offset="475" max-vertical-offset="1062">
           <folding />
         </state>
       </provider>

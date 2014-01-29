@@ -33,9 +33,9 @@
                 <% if(user_signed_in? && current_user.id == @lista.user_id) %>
                     <div class="small-1 medium-1 large-1 columns">
                       <% if mensagem.aprovada? %>
-                          <%= link_to mensagem_desaprovar_path(mensagem), class: "right", title: "Visível para visitantes" do %><i class="fa fa-eye"></i><% end %>
+                          <%= link_to mensagem_desaprovar_path(mensagem.id), class: "right", title: "Visível para visitantes" do %><i class="fa fa-eye"></i><% end %>
                       <% else %>
-                          <%= link_to mensagem_aprovar_path(mensagem), class: "right", title: "Oculta para visitantes" do %><i class="fa fa-eye-slash"></i><% end %>
+                          <%= link_to mensagem_aprovar_path(mensagem.id), class: "right", title: "Oculta para visitantes" do %><i class="fa fa-eye-slash"></i><% end %>
                       <% end %>
                     </div>
                     <div class="small-1 medium-1 large-1 columns">
