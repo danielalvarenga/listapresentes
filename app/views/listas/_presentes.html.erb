@@ -27,7 +27,7 @@
                   <div class="button"><i class="fa fa-lock"></i> Compra Encerrada</div>
               <% else %>
                   <% if (presente.lista.id == 1) %>
-                      <%= link_to 'COMPRAR', presente_checkout_path(presente.id), title: presente.url, class: "comprar button", target: "_blank" %>
+                      <%= link_to 'COMPRAR', presente_checkout_path(presente.id), title: presente.nome, class: "comprar button", target: "_blank" %>
                   <% else %>
                       <%= link_to 'COMPRAR', presente.url, title: presente.nome, class: "comprar button", target: "_blank" %>
                   <% end %>
