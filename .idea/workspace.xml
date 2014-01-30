@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mensagem.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mensagem.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="523" selection-end="523" vertical-scroll-proportion="0.7955801" vertical-offset="216" max-vertical-offset="666">
+            <state line="28" column="22" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mensagens.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_mensagens.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/listas/_mensagens.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="27" selection-start="2393" selection-end="2393" vertical-scroll-proportion="-12.0" vertical-offset="486" max-vertical-offset="1080">
+            <state line="9" column="69" selection-start="482" selection-end="482" vertical-scroll-proportion="0.5031056" vertical-offset="0" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -142,11 +142,11 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/controllers/mensagens_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/listas/_mensagens.html.erb" />
         <option value="$PROJECT_DIR$/app/views/listas/busca.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/como_funciona.html.erb" />
         <option value="$PROJECT_DIR$/app/views/listas/_presentes.html.erb" />
         <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
+        <option value="$PROJECT_DIR$/app/views/listas/_mensagens.html.erb" />
       </list>
     </option>
   </component>
@@ -818,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/listas/_mensagens.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="27" selection-start="2393" selection-end="2393" vertical-scroll-proportion="-12.0" vertical-offset="486" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="45" selection-start="2285" selection-end="2293" vertical-scroll-proportion="0.0" vertical-offset="1246" max-vertical-offset="1980">
@@ -834,7 +827,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="523" selection-end="523" vertical-scroll-proportion="0.7955801" vertical-offset="216" max-vertical-offset="666">
+        <state line="28" column="22" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/listas/_mensagens.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="69" selection-start="482" selection-end="482" vertical-scroll-proportion="0.5031056" vertical-offset="0" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
