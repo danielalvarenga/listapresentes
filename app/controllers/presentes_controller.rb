@@ -1,6 +1,6 @@
 class PresentesController < ApplicationController
   before_action :set_presente, only: [:show, :edit, :update, :destroy]
-  before_filter  :authenticate_user!
+  before_filter  :authenticate_user!, except: [:checkout]
 
   # GET /presentes
   # GET /presentes.json
