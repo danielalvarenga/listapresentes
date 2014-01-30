@@ -18,14 +18,14 @@ class Mensagem < ActiveRecord::Base
   before_create :desaprovar
 
   def aprovada?
-    self.aprovada == "1"
+    self.aprovada == TRUE
   end
 
   def aprovar
-    self.aprovada = "1"
+    self.aprovada = TRUE
   end
 
   def desaprovar
-    self.aprovada = "0"
+    self.aprovada = FALSE
   end
 end
