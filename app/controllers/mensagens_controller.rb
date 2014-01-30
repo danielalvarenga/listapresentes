@@ -67,7 +67,7 @@ class MensagensController < ApplicationController
     @mensagem = Mensagem.find(params[:mensagem_id])
 
     respond_to do |format|
-      if @mensagem.update(aprovada: "1")
+      if @mensagem.update_attribute(:aprovada, TRUE)
         format.html { redirect_to @mensagem.presente.lista, notice: 'A mensagem agora está visível.' }
         format.json { head :no_content }
       else
@@ -81,7 +81,7 @@ class MensagensController < ApplicationController
     @mensagem = Mensagem.find(params[:mensagem_id])
 
     respond_to do |format|
-      if @mensagem.update(aprovada: "0")
+      if @mensagem.update_attribute(:aprovada, FALSE)
         format.html { redirect_to @mensagem.presente.lista, notice: 'A mensagem agora está oculta.' }
         format.json { head :no_content }
       else

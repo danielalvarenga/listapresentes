@@ -16,39 +16,40 @@
 
         <%= render 'form_mensagem' %>
 
-        <% @presente.mensagens.each do |mensagem| %>
-          <% if ((mensagem.aprovada?) || (user_signed_in? && current_user.id == @lista.user_id)) %>
-            <div class="panel2">
-              <div class="row">
-                <div class="small-12 medium-12 large-12 columns">
-                  <strong class="assinatura"><%= mensagem.remetente %>: </strong>
-                  <span class="texto-mensagem"><%= mensagem.texto %></span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="small-10 medium-10 large-10 columns">
-                  <div><%= "Em #{mensagem.created_at.strftime('%d de %B de %Y às %H:%M')}" %></div>
-                </div>
 
-                <% if(user_signed_in? && current_user.id == @lista.user_id) %>
-                    <div class="small-1 medium-1 large-1 columns">
-                      <% if mensagem.aprovada? %>
-                          <%= link_to mensagem_desaprovar_path(mensagem.id), class: "right", title: "Visível para visitantes" do %><i class="fa fa-eye"></i><% end %>
-                      <% else %>
-                          <%= link_to mensagem_aprovar_path(mensagem.id), class: "right", title: "Oculta para visitantes" do %><i class="fa fa-eye-slash"></i><% end %>
-                      <% end %>
-                    </div>
-                    <div class="small-1 medium-1 large-1 columns">
-                      <%= link_to mensagem, method: :delete, data: { confirm: 'Excluir mensagem?' }, class: "right", title: "Excluir Mensagem" do %><i class="fa fa-trash-o"></i><% end %>
-                    </div>
-                <% end %>
-              </div>
-
-
-            </div>
-          <% end %>
-        <% end %>
       </div>
+      <% @presente.mensagens.each do |mensagem| %>
+          <% if ((mensagem.aprovada?) || (user_signed_in? && current_user.id == @lista.user_id)) %>
+              <div class="panel2">
+                <div class="row">
+                  <div class="small-12 medium-12 large-12 columns">
+                    <strong class="assinatura"><%= mensagem.remetente %>: </strong>
+                    <span class="texto-mensagem"><%= mensagem.texto %></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-10 medium-10 large-10 columns">
+                    <div><%= "Em #{mensagem.created_at.strftime('%d de %B de %Y às %H:%M')}" %></div>
+                  </div>
+
+                  <% if(user_signed_in? && current_user.id == @lista.user_id) %>
+                      <div class="small-1 medium-1 large-1 columns">
+                        <% if mensagem.aprovada? %>
+                            <%= link_to mensagem_desaprovar_path(mensagem), class: "right", title: "Visível para visitantes" do %><i class="fa fa-eye"></i><% end %>
+                        <% else %>
+                            <%= link_to mensagem_aprovar_path(mensagem), class: "right", title: "Oculta para visitantes" do %><i class="fa fa-eye-slash"></i><% end %>
+                        <% end %>
+                      </div>
+                      <div class="small-1 medium-1 large-1 columns">
+                        <%= link_to mensagem, method: :delete, data: { confirm: 'Excluir mensagem?' }, class: "right", title: "Excluir Mensagem" do %><i class="fa fa-trash-o"></i><% end %>
+                      </div>
+                  <% end %>
+                </div>
+
+
+              </div>
+          <% end %>
+      <% end %>
     </dd>
   </dl>
 </section>
