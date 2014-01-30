@@ -23,6 +23,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="mensagem.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="5" selection-start="528" selection-end="528" vertical-scroll-proportion="0.8453039" vertical-offset="216" max-vertical-offset="666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="framework_and_overrides.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_presentes.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_presentes.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/listas/_presentes.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="79" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.5590062" vertical-offset="378" max-vertical-offset="918">
+            <state line="31" column="79" selection-start="1694" selection-end="1694" vertical-scroll-proportion="-6.6666665" vertical-offset="378" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
@@ -134,12 +143,12 @@
         <option value="$PROJECT_DIR$/app/views/mensagens/show.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/controllers/mensagens_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss" />
         <option value="$PROJECT_DIR$/app/views/listas/_mensagens.html.erb" />
         <option value="$PROJECT_DIR$/app/views/listas/busca.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/como_funciona.html.erb" />
         <option value="$PROJECT_DIR$/app/views/listas/_presentes.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/mensagem.rb" />
       </list>
     </option>
   </component>
@@ -769,13 +778,6 @@
         <state line="7" column="28" selection-start="252" selection-end="252" vertical-scroll-proportion="0.35" vertical-offset="0" max-vertical-offset="360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mensagens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="45" selection-start="2285" selection-end="2293" vertical-scroll-proportion="0.8653295" vertical-offset="1192" max-vertical-offset="1980">
@@ -838,7 +840,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/listas/_presentes.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="79" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.5590062" vertical-offset="378" max-vertical-offset="918">
+        <state line="31" column="79" selection-start="1694" selection-end="1694" vertical-scroll-proportion="-6.6666665" vertical-offset="378" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/mensagem.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="528" selection-end="528" vertical-scroll-proportion="0.8453039" vertical-offset="216" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
