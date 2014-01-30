@@ -26,6 +26,6 @@ class Mensagem < ActiveRecord::Base
   end
 
   def desaprovar
-    self.aprovada = FALSE
+    self.aprovada = "0"
   end
 end
