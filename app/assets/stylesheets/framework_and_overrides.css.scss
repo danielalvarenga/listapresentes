@@ -143,6 +143,13 @@ section.logo * {
   margin-left: 1rem;
 }
 
+.logo h3, .logo i.fa-2x {
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline;
+  margin-left: 1rem;
+}
+
 .alert-box, .authform #error_explanation {
   width: 50%;
   padding-top: 2rem;
@@ -370,11 +377,16 @@ section.busca .panel {
 }
 
 .busca input.string {
-  width: 60%;
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.busca .campo {
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
 }
 
 .busca input.submit {

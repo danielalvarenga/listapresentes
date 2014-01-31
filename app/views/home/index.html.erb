@@ -5,8 +5,9 @@
           <div class="logo">
             <div class="row">
               <div class="small-12 medium-12 large-12 columns text-center">
-                <%= link_to(root_path) do %>
-                    <i class="fa fa-gift fa-5x"></i><h1>Lista Presentes</h1>
+                <%= link_to root_path do %>
+                    <i class="fa fa-gift fa-5x hide-for-small"></i><h1 class="hide-for-small">Lista Presentes</h1>
+                    <i class="fa fa-gift fa-2x hide-for-large hide-for-medium"></i><h3 class="hide-for-large hide-for-medium">Lista Presentes</h3>
                 <% end %>
               </div>
             </div>
@@ -16,10 +17,10 @@
                 <%= simple_form_for :pesquisar, url: busca_listas_path do |f|%>
                     <%= f.error_notification %>
                     <div class="row">
-                      <%= f.input :palavras_texto,
+                        <%= f.input :palavras_texto,
                                   label: false,
                                   placeholder: "Pesquisar pelo nome das pessoas ou da lista",
-                                  wrapper_html: {class: "small-12 medium-12 large-12 columns text-center"} %>
+                                  wrapper_html: {class: "campo small-11 medium-10 large-10 columns"} %>
                     </div>
                     <div class="row">
                       <%= f.button :submit, "Buscar", class: "button submit" %>
