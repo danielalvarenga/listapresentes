@@ -18,7 +18,6 @@
 
       <tbody>
         <% @presentes.each do |presente| %>
-          <tr>
             <td><%= image_tag(presente.foto, size: "100x100", alt: presente.nome.to_s, title: presente.nome.to_s) %></td>
             <td><%= presente.nome.to_s %></td>
             <td><%= number_to_currency(presente.valor) %></td>

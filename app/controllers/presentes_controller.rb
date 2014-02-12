@@ -6,6 +6,10 @@ class PresentesController < ApplicationController
   # GET /presentes.json
   def index
     @presentes = Presente.all.order('valor ASC')
+    @presentes.each do |presente|
+      Rails.logger.debug "-----------------#{presente.id}-#{presente.nome}"
+    end
+    render 'index'
   end
 
   # GET /presentes/1
