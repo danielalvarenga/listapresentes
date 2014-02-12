@@ -19,7 +19,7 @@
       <tbody>
         <% @presentes.each do |presente| %>
             <td><%= image_tag(presente.foto, size: "100x100", alt: presente.valor, title: presente.valor) %></td>
-            <td><%= presente.nome.nil? ? "..." : presente.nome %></td>
+            <td><%= presente.valor %></td>
             <td><%= number_to_currency(presente.valor) %></td>
             <td><%= link_to presente.lista.nome, lista_path(presente.lista.id), title: presente.lista.nome %></td>
             <td><%= link_to 'URL', presente.url, title: presente.url, target: "_blank" %></td>
