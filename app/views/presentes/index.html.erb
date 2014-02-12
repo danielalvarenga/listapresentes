@@ -19,8 +19,8 @@
       <tbody>
         <% @presentes.each do |presente| %>
           <tr>
-            <td><%= image_tag(presente.foto, size: "100x100", alt: presente.nome, title: presente.nome) %></td>
-            <td><%= presente.nome %></td>
+            <td><%= image_tag(presente.foto, size: "100x100", alt: presente.nome.to_s, title: presente.nome.to_s) %></td>
+            <td><%= presente.nome.to_s %></td>
             <td><%= number_to_currency(presente.valor) %></td>
             <td><%= link_to presente.lista.nome, lista_path(presente.lista.id), title: presente.lista.nome %></td>
             <td><%= link_to 'URL', presente.url, title: presente.url, target: "_blank" %></td>

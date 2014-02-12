@@ -16,5 +16,7 @@ class Presente < ActiveRecord::Base
   belongs_to :lista
   has_many :mensagens
 
-  validates :nome, :valor, :url, :foto, :lista_id, presence: true
+
+
+  validates_presence_of :nome, :valor, :url, :foto, :lista_id
 end
