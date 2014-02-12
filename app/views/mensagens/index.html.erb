@@ -15,18 +15,20 @@
 
       <tbody>
         <% @mensagens.each do |mensagem| %>
-          <tr>
-            <td><%= mensagem.remetente %></td>
-            <td><%= mensagem.presente.nome %></td>
-            <td><%= "#{mensagem.presente.lista.nome} de #{mensagem.presente.lista.presenteados}" %></td>
-            <td><%= link_to 'Visualizar', mensagem %></td>
-            <% if mensagem.aprovada? %>
-                <td><%= link_to 'Desaprovar', mensagem %></td>
-            <% else %>
-                <td><%= link_to 'Aprovar', mensagem %></td>
-            <% end %>
-            <td><%= link_to 'Excluir', mensagem, method: :delete, data: { confirm: 'Excluir mensagem?' } %></td>
-          </tr>
+          <% if mensagem.presente.lista.user.id == current_user.id %>
+              <tr>
+                <td><%= mensagem.remetente %></td>
+                <td><%= mensagem.presente.nome %></td>
+                <td><%= "#{mensagem.presente.lista.nome} de #{mensagem.presente.lista.presenteados}" %></td>
+                <td><%= link_to 'Visualizar', mensagem %></td>
+                <% if mensagem.aprovada? %>
+                    <td><%= link_to 'Desaprovar', mensagem %></td>
+                <% else %>
+                    <td><%= link_to 'Aprovar', mensagem %></td>
+                <% end %>
+                <td><%= link_to 'Excluir', mensagem, method: :delete, data: { confirm: 'Excluir mensagem?' } %></td>
+              </tr>
+          <% end %>
         <% end %>
       </tbody>
     </table>
