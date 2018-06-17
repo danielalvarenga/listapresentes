@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.0.0'
+ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -70,7 +71,7 @@ gem "pagseguro-oficial", git: "git://github.com/pagseguro/ruby.git"
 
 group :development do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  # gem 'sqlite3'
   # Exibe os atributos no model (como comentário)
   gem 'annotate'
   # ajuda quando as coisas dão errado
