@@ -11,7 +11,7 @@
 #  updated_at  :datetime
 #
 
-class Mensagem < ActiveRecord::Base
+class Mensagem < ApplicationRecord
   belongs_to :presente
 
   validates_presence_of :remetente, :texto

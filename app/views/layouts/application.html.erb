@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Lista Presentes" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Crie uma lista de presentes personalizada com produtos de qualquer loja." %>">
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag "vendor/modernizr" %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
     <header>

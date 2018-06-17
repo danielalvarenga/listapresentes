@@ -12,7 +12,7 @@
 #  updated_at :datetime
 #
 
-class Presente < ActiveRecord::Base
+class Presente < ApplicationRecord
   belongs_to :lista
   has_many :mensagens
 

@@ -14,7 +14,7 @@
 #  publicada     :boolean
 #
 
-class Lista < ActiveRecord::Base
+class Lista < ApplicationRecord
   belongs_to :user
   has_many :presentes
 
