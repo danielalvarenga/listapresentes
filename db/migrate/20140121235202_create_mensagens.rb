@@ -1,4 +1,4 @@
-class CreateMensagens < ActiveRecord::Migration
+class CreateMensagens < ActiveRecord::Migration[5.2]
   def change
     create_table :mensagens do |t|
       t.string :remetente

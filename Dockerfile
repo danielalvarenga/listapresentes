@@ -40,4 +40,4 @@ RUN bundle install $bundle_options_var
 # Copy all project files to application folder inside container
 COPY . $APP_ROOT
 
-CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+CMD ["bundle", "exec", "rails", "assets:precompile"]

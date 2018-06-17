@@ -1,4 +1,4 @@
-class CreatePresentes < ActiveRecord::Migration
+class CreatePresentes < ActiveRecord::Migration[5.2]
   def change
     create_table :presentes do |t|
       t.string :nome
